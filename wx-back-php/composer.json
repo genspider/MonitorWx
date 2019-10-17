@@ -1,0 +1,7 @@
+{
+  "require": {
+    "voku/simple_html_dom": "^4.6",
+    "mgargano/simplehtmldom": "^1.5",
+    "inhere/php-validate": "^2.7"
+  }
+}

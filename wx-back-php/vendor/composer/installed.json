@@ -1,0 +1,215 @@
+[
+    {
+        "name": "inhere/php-validate",
+        "version": "v2.7.0",
+        "version_normalized": "2.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/inhere/php-validate.git",
+            "reference": "12dafdeaa352428ef50300d83630caab210da631"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/inhere/php-validate/zipball/12dafdeaa352428ef50300d83630caab210da631",
+            "reference": "12dafdeaa352428ef50300d83630caab210da631",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">7.1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.5"
+        },
+        "time": "2019-06-23T14:55:52+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Inhere\\Validate\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "inhere",
+                "email": "in.798@qq.com",
+                "homepage": "http://www.yzone.net/"
+            }
+        ],
+        "description": "an simple validate, filter library of the php",
+        "homepage": "https://github.com/inhere/php-validate",
+        "keywords": [
+            "form-validate",
+            "library",
+            "php-library",
+            "validate",
+            "validation"
+        ]
+    },
+    {
+        "name": "mgargano/simplehtmldom",
+        "version": "1.5",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/matgargano/simplehtmldom.git",
+            "reference": "37fb0d7c1bda45c5a4cf14fdef56c1edf6aa42be"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/matgargano/simplehtmldom/zipball/37fb0d7c1bda45c5a4cf14fdef56c1edf6aa42be",
+            "reference": "37fb0d7c1bda45c5a4cf14fdef56c1edf6aa42be",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-01-05T18:17:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "SimpleHtmlDom": "src/"
+            },
+            "files": [
+                "src/simple_html_dom.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "The MIT License"
+        ],
+        "authors": [
+            {
+                "name": "S.C. Chen",
+                "email": "me578022@gmail.com"
+            }
+        ],
+        "description": "Composer package that gives you access to and (unlike all the others at this time) autoloads S.C. Chen's PHP Simple HTML DOM Parser Library",
+        "homepage": "http://simplehtmldom.sourceforge.net/",
+        "keywords": [
+            "Simple",
+            "dom",
+            "html"
+        ]
+    },
+    {
+        "name": "symfony/css-selector",
+        "version": "v4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/css-selector.git",
+            "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/105c98bb0c5d8635bea056135304bd8edcc42b4d",
+            "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "time": "2019-01-16T21:53:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\CssSelector\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jean-François Simon",
+                "email": "jeanfrancois.simon@sensiolabs.com"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony CssSelector Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "voku/simple_html_dom",
+        "version": "4.6.0",
+        "version_normalized": "4.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/voku/simple_html_dom.git",
+            "reference": "f24249b7bfb04043728b4130a1d8792017cafb61"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/f24249b7bfb04043728b4130a1d8792017cafb61",
+            "reference": "f24249b7bfb04043728b4130a1d8792017cafb61",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-libxml": "*",
+            "ext-simplexml": "*",
+            "php": ">=7.0.0",
+            "symfony/css-selector": "~3.0|~4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0 || ~7.0"
+        },
+        "suggest": {
+            "voku/portable-utf8": "~4.0"
+        },
+        "time": "2019-07-01T07:59:39+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "voku\\helper\\": "src/voku/helper/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Lars Moelleken",
+                "homepage": "http://www.moelleken.org/",
+                "role": "Developer"
+            },
+            {
+                "name": "dimabdc",
+                "email": "support@titor.ru",
+                "homepage": "http://github.com/dimabdc",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple HTML DOM package.",
+        "homepage": "http://simplehtmldom.sourceforge.net/",
+        "keywords": [
+            "HTML Parser",
+            "dom",
+            "php dom"
+        ]
+    }
+]

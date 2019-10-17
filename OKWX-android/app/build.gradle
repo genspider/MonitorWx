@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    dexOptions {
+        jumboMode = true
+    }
+    defaultConfig {
+        multiDexEnabled false
+        applicationId "com.okwx.xiao.okwx"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为BoLanHui_v1.0_2015-01-15.apkzc
+                        def fileName = "zc.apk"
+                        //def fileName = "appdebug.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.alibaba:fastjson:1.1.70.android'
+    compile 'org.java-websocket:Java-WebSocket:1.3.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.2.2'
+    compile  'io.reactivex.rxjava2:rxandroid:2.1.0'
+    compile  'io.reactivex.rxjava2:rxkotlin:2.3.0'
+    compile  'com.squareup.okhttp3:okhttp:3.11.0'
+    compile  'com.squareup.okio:okio:2.0.0'
+    /*compile 'com.fanjun:keeplive:1.1.18'*/
+   /* compile 'com.androidkun:xversionupdate:1.0.6'
+    compile 'com.github.xuexiangjys:XUpdate:1.0.0'
+    compile "com.lzy.net:okgo:3.0.4"//okgo 网络请求
+    compile 'com.google.code.gson:gson:2.8.2'//gson*/
+    /*compile "org.permissionsdispatcher:permissionsdispatcher:4.3.1"//权限
+    annotationProcessor "org.permissionsdispatcher:permissionsdispatcher-processor:4.3.1"//权限*/
+
+}
